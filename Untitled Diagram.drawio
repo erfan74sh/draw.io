@@ -1,0 +1,152 @@
+<mxfile host="app.diagrams.net" modified="2024-07-10T08:40:25.273Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.4" etag="FM00W6V0twYtfq9hUPaQ" type="github">
+  <diagram name="Page-1" id="ukou9yHHxu-IyvqWHbx8">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Start" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="321" width="51" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Call Received" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="103" width="111" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Details Valid?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="274" y="206" width="144" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Verify Customer" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="103" y="419" width="131" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Send to Queue" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="109" y="522" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Agent Available?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="86" y="625" width="166" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Agent Assigned" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="24" y="963" width="123" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Call in Progress" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="23" y="1066" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Issue Resolved?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="6" y="1169" width="157" height="157" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="End Call" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="132" y="1395" width="74" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Back to Queue" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="162" y="860" width="119" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="End Call" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="309" y="419" width="74" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Get Info from Customer" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="522" width="186" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Customer Call" style="curved=1;startArrow=none;endArrow=block;exitX=0.49;exitY=1;entryX=0.51;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Get Customer Details" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.8;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="169" y="384" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Valid" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Assign to Agent" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.98;entryX=0.4;entryY=-0.01;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="47" y="825" />
+              <mxPoint x="47" y="928" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Connect Call" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="Resolve Issue" style="curved=1;startArrow=none;endArrow=block;exitX=0.4;exitY=0.99;entryX=0.33;entryY=0;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="47" y="1134" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.12;entryY=0;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="1361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.84;exitY=0;entryX=0.7;entryY=0.99;" edge="1" parent="1" source="10" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="161" y="1134" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.72;exitY=1;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="7" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="222" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="Agent Available" style="curved=1;startArrow=none;endArrow=block;exitX=0.27;exitY=0.99;entryX=0.64;entryY=-0.01;" edge="1" parent="1" source="12" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="138" y="928" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" value="Customer Hangs Up" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=0.99;entryX=0.9;entryY=0;" edge="1" parent="1" source="12" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="928" />
+              <mxPoint x="260" y="1361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="4" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="Request Information" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.42;entryY=-0.01;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="346" y="487" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.58;exitY=-0.01;entryX=0.94;entryY=1;" edge="1" parent="1" source="14" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="439" y="487" />
+              <mxPoint x="439" y="384" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
